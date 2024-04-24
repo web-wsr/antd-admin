@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/search-table.css">
+    <title>Table</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="header-wrapper">
+            <div class="header-content">
+                <div class="header-logo"></div>
+                <div class="header-user">
+                    <span class="user-search"></span>
+                    <span class="user-help"></span>
+                    <span class="user-msg">
+                        <i class="msg-num"></i>
+                    </span>
+                    <span class="user-login">
+                        <i class="user-profile"></i>
+                        <p class="user-name">Serati Ma</p>
+                    </span>
+                    <span class="header-language"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-mainer">
+        <div class="mainer-content">
+            <input type="checkbox" id="checkbox" />
+            <div class="mainer-slider">
+                <ul class="slider-list">
+                    <li class="slider-item">
+                        <div class="slider-tittle">
+                            <i class="slider-icon dashbaord-icon"></i>
+                            <span class="slider-text">Dashbaord</span>
+                        </div>
+                        <i class="slider-arrow"></i>
+                    </li>
+                    <ul class="slider-menu dashbaord-active">
+                        <li class="slider-menu-item">
+                            <span class="menu-text">Analysis</span>
+                        </li>
+                        <li class="slider-menu-item">
+                            <span class="menu-text">Monitor</span>
+                        </li>
+                        <li class="slider-menu-item">
+                            <span class="menu-text">Workplace</span>
+                        </li>
+                    </ul>
+                    <li class="slider-item">
+                        <div class="slider-tittle">
+                            <i class="slider-icon form-icon"></i>
+                            <span class="slider-text">Form</span>
+                        </div>
+                        <i class="slider-arrow"></i>
+                    </li>
+                    <ul class="slider-menu form-active">
+                        <li class="slider-menu-item">
+                            <span class="menu-text">Basic Form</span>
+                        </li>
+                        <li class="slider-menu-item">
+                            <span class="menu-text">Step Form</span>
+                        </li>
+                        <li class="slider-menu-item">
+                            <span class="menu-text">Advanced Form</span>
+                        </li>
+                    </ul>
+                    <li class="slider-item">
+                        <div class="slider-tittle">
+                            <i class="slider-icon list-icon"></i>
+                            <span class="slider-text text-active">List</span>
+                        </div>
+                        <i class="slider-arrow arrow-active"></i>
+                    </li>
+                    <ul class="slider-menu list-active">
+                        <li style="padding-right: 20px;" class="slider-menu-item ">
+                            <span class="menu-text">Search List</span>
+                            <i class="slider-arrow"></i>
+                        </li>
+                        <ul style="display: none;" class="slider-menu">
+                            <li class="slider-menu-item second-menu">
+                                <span class="menu-text">Search List(articles)</span>
+                            </li>
+                            <li class="slider-menu-item second-menu">
+                                <span class="menu-text">Search List(projects)</span>
+                            </li>
+                            <li class="slider-menu-item second-menu">
+                                <span class="menu-text">Search List(applica...</span>
+                            </li>
+                        </ul>
+                        <li class="slider-menu-item">
+                            <span class="menu-text text-active">Search Table</span>
+                        </li>
+                        <li style="margin: 8px 0;" class="slider-menu-item">
+                            <span class="menu-text">Basic List</span>
+                        </li>
+                        <li class="slider-menu-item">
+                            <span class="menu-text">Card List</span>
+                        </li>
+                    </ul>
+                    <li class="slider-item">
+                        <div class="slider-tittle">
+                            <i class="slider-icon profile-icon"></i>
+                            <span class="slider-text">Profile</span>
+                        </div>
+                        <i class="slider-arrow"></i>
+                    </li>
+                    <li class="slider-item">
+                        <div class="slider-tittle">
+                            <i class="slider-icon result-icon"></i>
+                            <span class="slider-text">Result</span>
+                        </div>
+                        <i class="slider-arrow"></i>
+                    </li>
+                    <li class="slider-item">
+                        <div class="slider-tittle">
+                            <i class="slider-icon exception-icon"></i>
+                            <span class="slider-text">Exception</span>
+                        </div>
+                        <i class="slider-arrow"></i>
+                    </li>
+                    <li class="slider-item">
+                        <div class="slider-tittle">
+                            <i class="slider-icon account-icon"></i>
+                            <span class="slider-text">Account</span>
+                        </div>
+                        <i class="slider-arrow"></i>
+                    </li>
+                    <li class="slider-item">
+                        <div class="slider-tittle">
+                            <i class="slider-icon editor-icon"></i>
+                            <span class="slider-text">Graphic Editor</span>
+                        </div>
+                        <i class="slider-arrow"></i>
+                    </li>
+                </ul>
+                <input type="checkbox" id="checkbox" />
+                <label class="check-label" for="checkbox">
+                    <i class="check-icon"></i>
+                </label>
+            </div>
+            <div class="mainer-frame">
+                <div class="frame-banner">
+                    <span class="banner-location">
+                        <p class="location-name">Home</p>
+
+                        /
+
+                        <p class="location-name">List</p>
+
+                        /
+                        <p class="location-name">Search List</p>
+
+                        /
+                        <p style="color: rgba(0, 0, 0, 0.85);" class="location-name">Search Table</p>
+                    </span>
+                    <span class="banner-title">
+                        <h1 class="banner-title-name">Search Table</h1>
+                    </span>
+                </div>
+                <div class="frame-body">
+                    <div class="frame-body-content">
+                        <div class="frame-body-head">
+                            <div class="head-form">
+                                <div class="head-form-container">
+                                    <div class="head-form-title">
+                                        Rule Name
+                                        <span class="form-question"></span>
+                                    </div>
+                                    <div class="head-form-input">
+                                        <input class="inner-input" type="text" placeholder="Please enter ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="head-form">
+                                <div class="head-form-container">
+                                    <div style="width: 158px; text-align: right; justify-content: flex-end;"
+                                        class="head-form-title">
+                                        Description
+                                    </div>
+                                    <div class="head-form-input">
+                                        <input class="inner-input" type="text" placeholder="Please enter ">
+                                        <div class="reset-btn">
+                                            <span>Reset</span>
+                                        </div>
+                                        <div class="query-btn">
+                                            <span>Query</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="head-expand" href="javasscript:;">
+                                Expand
+                            </a>
+                        </div>
+                        <div class="frame-body-table">
+                            <div class="table-container">
+                                <div class="table-nav">
+                                    <div class="table-nav-title">Search Table</div>
+                                </div>
+                                <div class="table-action">
+                                    <span class="table-action-name">Application Name</span>
+                                    <button class="Log-btn">View Log</button>
+                                    <button class="add-btn">
+                                        <span class="add-icon"></span>
+                                        Add New
+                                    </button>
+                                    <div class="table-action-setting">
+                                        <span class="action-icon reload-icon"></span>
+                                        <span class="action-icon outline-icon"></span>
+                                        <span class="action-icon setting-icon"></span>
+                                        <span class="action-icon screen-icon"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-list">
+                                <div class="table-list-nav">
+                                    <div class="table-checkbox">
+                                        <span class="checkbox-inner"></span>
+                                    </div>
+                                    <div style="width: 119px;" class="table-title">
+                                        <span class="table-title-name">Rule Name</span>
+                                    </div>
+                                    <div class="table-title">
+                                        <span class="table-title-name">Description</span>
+                                    </div>
+                                    <div class="table-title-column">
+                                        <span class="column-name">Service Calls</span>
+                                    </div>
+                                    <div style="width: 97px;" class="table-title">
+                                        <span class="table-title-name">Status</span>
+                                    </div>
+                                    <div style="width: 161px;" class="table-title-column">
+                                        <span style="width: 114px;" class="column-name">Last Dispatch Time</span>
+                                    </div>
+                                    <div style="flex: 1; width: 201px;" class="table-title">
+                                        <span class="table-title-name">Action</span>
+                                    </div>
+                                </div>
+                                <div class="table-list-body">
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-list-nav">
+                                        <div style="background-color: rgba(255, 255, 255, 0);;" class="table-checkbox ">
+                                            <span class="checkbox-inner"></span>
+                                        </div>
+                                        <div style="width: 119px;" class="table-list-text">
+                                            <span style="color: rgba(24, 144, 255, 1);" class="list-text-name">TradeCode
+                                                99</span>
+                                        </div>
+                                        <div style="width: 411px;" class="table-list-text">
+                                            <span class="list-text-name">Quam aliquam odio ullamcorper
+                                                ornare eleifend ipsum </span>
+                                        </div>
+                                        <div style="width: 115px;" class="table-list-text">
+                                            <span class="list-text-name">3,638,066</span>
+                                        </div>
+                                        <div style="width: 97px;" class="table-list-text">
+                                            <span class="list-text-name list-online">Online</span>
+                                        </div>
+                                        <div style="width: 161px;" class="table-list-text">
+                                            <span class="list-text-name">2021-02-05 08:28:36</span>
+                                        </div>
+                                        <div style="width: 201px; flex: 1;" class="table-list-text action-text">
+                                            <span style="margin-right: 16px;" class="list-text-name">Config</span>
+                                            <span class="list-text-name">Subscription Alert</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

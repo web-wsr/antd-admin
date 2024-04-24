@@ -1,0 +1,294 @@
+.form-active {
+    display: block;
+}
+
+.mainer-content input:checked+div ul .form-active {
+    display: none;
+}
+
+.arrow-active {
+    content: url("../img/Ant-Menu-Submenu-Arrow-Up.svg");
+}
+
+.form-icon::before {
+    background: url(../img/icon-form-color.svg) no-repeat 0 0;
+}
+
+.text-active {
+    color: rgba(24, 144, 255, 1);
+}
+
+
+
+/* mainer-layout部分 */
+.mainer-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.frame-banner {
+    height: 131px;
+    padding: 0 24px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.banner-location {
+    height: 22px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.location-name {
+    height: 22px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.banner-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 44px;
+    margin: 8px 0;
+}
+
+.banner-title-name {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.banner-subtitle {
+    display: block;
+    height: 17px;
+    color: rgba(51, 51, 51, 1);
+    font-family: Helvetica Neue;
+    font-size: 13px;
+    line-height: 130.999994%;
+}
+
+/* frame-body部分 */
+.frame-body {
+    width: 100%;
+    height: 662px;
+    padding: 20px 24px 0;
+    background-color: transparent;
+}
+
+.frame-content {
+    height: 662px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.frame-form {
+    margin: 0 auto auto;
+    max-width: 650px;
+    height: 100%;
+}
+
+.form-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.title-name {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
+}
+
+.title-txt {
+    display: flex;
+    align-items: center;
+}
+
+.title-txt::after {
+    display: block;
+    content: url("../img/InfoCircle.svg");
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin-left: 4px;
+}
+
+.title-optional {
+    margin-left: 4px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.title-name::after {
+    content: ":";
+    margin-left: 4px;
+    margin-right: 8px;
+}
+
+.form-input-wrapper {
+    display: inline-flex;
+    align-items: center;
+    width: 484px;
+    max-width: 100%;
+    height: 32px;
+    padding: 5px 12px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    background: rgba(255, 255, 255, 1);
+}
+
+.form-input {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.88);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.form-area-wrapper {
+    display: flex;
+    align-items: center;
+    height: 76px;
+    width: 484px;
+    max-width: 100%;
+}
+
+.form-area-content {
+    flex: 1;
+    max-width: 100%;
+}
+
+.form-area {
+    width: 484px;
+    height: 76px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 5px 12px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 0.88);
+    outline: none;
+}
+
+.form-input-weight {
+    position: relative;
+}
+
+.form-input-weight::after {
+    display: block;
+    width: 11px;
+    height: 22px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: Roboto;
+    font-size: 14px;
+    position: absolute;
+    content: "%";
+    right: 0;
+    transform: translateX(20px);
+}
+
+.form-control {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 32px;
+    width: 484px;
+}
+
+.radio-wrapper {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: Roboto;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.radio-input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    border: #d9d9d9;
+}
+
+.radio-title {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 8px;
+}
+
+.form-tip {
+    width: 484px;
+    height: 24px;
+    color: rgba(0, 0, 0, 0.45);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.form-btn {
+    width: 484px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.submit-btn {
+    padding: 4px 15px;
+    border-radius: 2px;
+    border: 1px solid rgba(24, 144, 255, 1);
+    background: rgba(24, 144, 255, 1);
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.04);
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+.submit-btn:hover {
+    color: #fff;
+    background: #40a9ff;
+}
+
+
+.save-btn {
+    padding: 4px 15px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.02);
+    color: rgba(0, 0, 0, 0.85);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+.save-btn:hover {
+    color: #40a9ff;
+    border-color: #40a9ff;
+}

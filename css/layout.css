@@ -1,0 +1,354 @@
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-header {
+    width: 100%;
+    height: 48px;
+}
+
+.header-wrapper {
+    width: 1440px;
+    height: 48px;
+    margin: 0 auto;
+    background: rgba(0, 21, 41, 1);
+    box-shadow: 0px -1px rgba(240, 240, 240, 1) inset;
+}
+
+.header-content {
+    height: 48px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header-logo::before {
+    content: url("../img/header-Logo.svg");
+    display: block;
+    width: 181px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.header-user {
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-search,
+.user-help {
+    height: 48px;
+    padding: 17px 12px;
+}
+
+.user-search::after,
+.user-help::after {
+    display: block;
+    content: url("../img/Search.svg");
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.user-help::after {
+    content: url("../img/Vector.svg");
+}
+
+.user-msg {
+    position: relative;
+    height: 48px;
+    padding: 12px;
+}
+
+.user-msg::after {
+    content: url("../img/msg-icon.svg");
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.msg-num {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 2px;
+    right: -10px;
+    width: 31px;
+    height: 20px;
+    background: url(../img/offset.svg) no-repeat 0 0;
+}
+
+.user-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px;
+}
+
+.user-profile {
+    background: url(../img/Setting.svg) no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.user-name {
+    height: 22px;
+    margin-left: 8px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+}
+
+.header-language {
+    height: 48px;
+    padding: 15px 12px;
+}
+
+.header-language::after {
+    content: url("../img/language.svg");
+    display: block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+/* page-mainer部分开始 */
+.page-mainer {
+    width: 100%;
+    height: 852px;
+}
+
+.mainer-content {
+    display: flex;
+    width: 1440px;
+    height: 852px;
+    margin: 0 auto;
+    background-color: rgba(240, 242, 245, 1);
+}
+
+.mainer-slider {
+    width: 208px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slider-list {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    overflow: hidden;
+    transition: width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+}
+
+.slider-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    margin: 4px;
+    padding: 0 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.slider-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.slider-tittle {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+
+.slider-icon::before {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: url(../img/icon-dashbaord.svg) no-repeat 0 0;
+}
+
+.form-icon::before {
+    background: url(../img/icon-form.svg) no-repeat 0 0;
+}
+
+.list-icon::before {
+    background: url(../img/icon-list.svg) no-repeat 0 0;
+}
+
+.profile-icon::before {
+    background: url(../img/icon-profile.svg) no-repeat 0 0;
+}
+
+.result-icon::before {
+    background: url(../img/icon-result.svg) no-repeat 0 0;
+}
+
+.exception-icon::before {
+    background: url(../img/icon-exception.svg) no-repeat 0 0;
+}
+
+.account-icon {
+    background: url(../img/icon-account.svg) no-repeat 0 0;
+}
+
+.editor-icon::before {
+    background: url(../img/icon-editor.svg) no-repeat 0 0;
+}
+
+.slider-text {
+    display: block;
+    height: 22px;
+    padding-left: 10px;
+    /* color: rgba(24, 144, 255, 1); */
+    font-family: Roboto;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+
+
+.slider-arrow::after {
+    content: url("../img/right-side-icon.svg");
+    display: block;
+    width: 10px;
+    height: 9px;
+    line-height: 9px;
+    text-align: center;
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 1px rgba(240, 240, 240, 1) inset;
+    cursor: pointer;
+}
+
+.check-icon::after {
+    display: block;
+    content: url("../img/MenuFold.svg");
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+#checkbox {
+    display: none;
+}
+
+
+.mainer-content input:checked+div {
+    width: 48px;
+}
+
+.mainer-content input:checked+div ul li div span {
+    display: none;
+}
+
+.mainer-content input:checked+div ul li .slider-arrow {
+    display: none;
+}
+
+
+
+
+
+/* dashbaord手动展开 */
+.dashbaord-active {
+    display: none;
+}
+
+.form-active {
+    display: none;
+}
+
+.list-active {
+    display: none;
+}
+
+.slider-menu {
+    width: 208px;
+    margin: 4px 0;
+    background: rgba(250, 250, 250, 1);
+}
+
+.slider-menu-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 40px;
+    color: rgba(0, 0, 0, 0.85);
+    background: rgba(255, 255, 255, 0);
+}
+
+.second-menu {
+    padding-left: 64px;
+}
+
+.slider-menu-item:nth-child(2) {
+    margin: 8px 0;
+}
+
+
+
+.menu-text {
+    height: 22px;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.first-active {
+    background: rgba(230, 247, 255, 1);
+    border-right: 3px solid rgba(24, 144, 255, 1);
+    color: rgba(24, 144, 255, 1);
+}
