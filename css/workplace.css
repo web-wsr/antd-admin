@@ -2,7 +2,7 @@
     display: block;
 }
 
-.mainer-content input:checked+div ul .dashbaord-active {
+.page-wrapper input:checked+div ul .dashbaord-active {
     display: none;
 }
 
@@ -21,8 +21,12 @@
 /* mainer-layout部分 */
 .mainer-frame {
     width: 100%;
+    padding-top: 48px;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
 }
 
 .frame-banner {
@@ -151,8 +155,11 @@
 
 .frame-content {
     width: 100%;
+    height: 100%;
+    flex: 1;
+    overflow-y: auto;
+    background-color: #F0F2F5;
     padding: 24px 24px 0 24px;
-    background-color: transparent;
 }
 
 .frame-container {
@@ -299,7 +306,6 @@
 
 
 .frame-activities {
-    height: 322px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 1px rgba(240, 240, 240, 1) inset;
@@ -308,16 +314,12 @@
 }
 
 .frame-activities-wrapper {
-    flex: 1;
+    height: 100%;
     padding: 24px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
-.frame-activities-list {
-    overflow-y: auto;
-}
 
 .frame-activities-item {
     display: flex;

@@ -2,7 +2,7 @@
     display: block;
 }
 
-.mainer-content input:checked+div ul .list-active {
+.page-wrapper input:checked+div ul .list-active {
     display: none;
 }
 
@@ -21,8 +21,12 @@
 /* mainer-layout部分 */
 .mainer-frame {
     width: 100%;
+    padding-top: 48px;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
 }
 
 .frame-banner {
@@ -158,12 +162,14 @@
 /* frame-body部分开始 */
 .frame-body {
     width: 100%;
+    height: 100%;
+    flex: 1;
+    overflow-y: auto;
     padding: 24px 24px 0;
-    background: transparent;
+    background-color: #F0F2F5;
 }
 
 .frame-body-content {
-    height: 634px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -216,20 +222,16 @@
 }
 
 .head-nav-item {
-    display: flex;
-    align-items: center;
     height: 22px;
     padding: 1px 8px;
     font-size: 12px;
     line-height: 20px;
     margin-right: 8px;
+    white-space: nowrap;
 }
 
 .head-nav-item::after {
-    display: block;
     content: url("../img/Close.svg");
-    width: 10px;
-    height: 10px;
     line-height: 10px;
     text-align: center;
     margin-left: 3px;
